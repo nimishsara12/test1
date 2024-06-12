@@ -93,7 +93,7 @@ body {
 }
 
 .wrapper a:hover {
-    color: #039BE5;
+    /* color: #039BE5; */
 }
 .card{
     margin-top: 20px;
