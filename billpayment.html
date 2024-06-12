@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Bill Payment</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+ <!-- Favicons -->
+ <link href="/assets/img/ebill-favicon-color.png" rel="icon">
+
+ <!-- Google Fonts -->
+ <link
+     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+     rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+ <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+ <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+ <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/login.css">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex justify-content-between">
+
+            <div class="logo">
+
+                <a href="index.html"><img src="/EBILL/Bootstrap Integration/assets/img/ebill-high-resolution-logo-transparent (1).png" alt=""
+                        class="img-fluid"></a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto " href="/home.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto active" href="#services">Payments</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#"><span>Others</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/history.html">Bill History</a></li>
+                            <li class="dropdown"><a href="#"><span>Actions</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Tariff</a></li>
+                                    <li><a href="#">Schedule</a></li>
+                                    <li><a href="/newconn.html">New Connection</a></li>
+                                    <li><a href="#">Solar Plant</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Schedule Charges</a></li>
+                            <li><a href="/complaintand feed.html">Complaints</a></li>
+                            <li><a href="#">Locate Meter</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto btn-primary" href="./Login.html">Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="container-fluid mt-5 pt-4">
+        <div class="row">
+            <div class="col-sm-3" style="background-color:#00428a">
+                <div class="container p-5">
+                    <div class="text-light">
+                        <h5>Bill Details</h5>
+                        <hr>
+                        
+                        <div>
+                            <p>Latest Bill</p>
+                        </div>
+                        
+                        <div>
+                            <p>June 01, 2024</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Payment Due</p>
+                        </div>
+                        <div>
+                            <p>June 3, 2024</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Current Balance: <b>Rs 108.66</b></p>
+                        </div>
+                       
+                        <div>
+
+                            <p>Balance as of 09/06/2024</p>
+                        </div>
+                        <hr>  
+                        <div>
+                            <p>Your current balance is up to date as of June 9,2024 and may not reflect Pay Per View (PPV) andOn Demand purchases and/or payments made within the last 48 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9" style="background-color:white;">
+                <div class="container mt-4 mb-4">
+                    <h2>01 Payment amount</h2>
+                    <div class="d-flex justify-content-between">
+                        <div class="radio" >
+                            <label><input class="radios" type="radio" name="optradio" checked> Pay total balance</label>
+                        </div>
+                        <div>
+                            <h4>Rs 108.66</h4>
+                        </div>     
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        
+                        <div class="radio" >
+                            <label><input class="radios" type="radio" name="optradio" checked> Pay amount</label>
+                        </div>
+
+                        <div>
+                            <input style="width: 140px;" type="text" placeholder="0.00" class="form-control" id="usr">
+                        </div>                       
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between ">
+                        <div>
+                            <h2>02 Payment menthod</h2>
+                        </div>
+                        <div>
+
+                            <img height="38px" width="60px" src="https://i.pinimg.com/originals/0b/08/7c/0b087c9ad51a5c0a3afd57a05ebe4bee.png" alt="">
+                            <img height="40px" src="https://imageio.forbes.com/blogs-images/steveolenski/files/2016/07/Mastercard_new_logo-1200x865.jpg?height=512&width=711&fit=bounds" alt="">
+                            <img height="50px" src="https://www.svgrepo.com/show/266068/american-express.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="mb-3" style="width: 60%;">
+                        <label for="exampleFormControlInput1" class="form-label">Name on card</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                    <div class="mb-3" style="width: 60%;">
+                        <label for="exampleFormControlInput1" class="form-label">Card number</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+
+                      <div class="d-flex justify-content-between">
+                        
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Expiray date</label>
+                            <input type="text" class="form-control" placeholder="MM/YY">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Security code</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3 to 4 digits">
+                        </div>
+                      </div>                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <h6><b>Save credit card</b></h6>
+                                This will save you time and steps for future payments, but please avoid prepaid credit cards which cannot be saved in our system.
+                            </label>
+                        </div>
+                        <div class="form-check border">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h6><b>Set up Auto Payments</b></h6>
+                              The safe, convenient and on-time way to make all your future payments. Opt in today. knowing you can change it at any time
+                            </label>
+                        </div>
+                        <div>
+
+                            <div class="btn-group p-3 ">
+                                <div style="height: 50px;" class="bg-primary rounded-pill ps-3 pe-3 ">
+                                    <button  type="button" class="btn text-light">Pay now</button>
+
+                                </div>
+                                <div style="height: 50px;" class="bg-white rounded-pill ps-3 pe-3">
+                                    <button type="button" class="btn ">Cancel</button>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>Ebill</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa quibusdam similique
+                            accusantium temporibus sed ad delectus corporis ea nemo fuga quidem blanditiis nostrum,
+                            veniam, perferendis sequi tenetur vitae eaque!</p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Street <br>
+                            Pune, 392022<br>
+                            India <br>
+                            <strong>Phone:</strong> +91 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ipsam voluptate magni
+                            perspiciatis est doloremque excepturi ea qui provident aperiam ipsum neque harum error
+                            recusandae dolorem eveniet illo, illum libero!</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>ebill</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+
+                Designed by <a href="#">TS094_Nimish Sarathe</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
